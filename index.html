@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 2000px;
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+        }
+        .wrapper {
+            max-width: 1200px;
+            margin: auto;
+            padding-top: 88px;
+        }
+        h1{
+            color: skyblue;
+            font-size:  48px;
+        }
+        h2{
+            font-size: 32px;
+        }
+        h3{
+            font-size: 24px;
+            font-weight: 300;
+        }
+        .btns{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+        .btns .container {
+            position: relative;
+            max-width: 900px;
+            padding: 20px;
+            background-color: #333;
+            margin: auto;
+        }
+        .btns_menu{
+            display: flex;
+            justify-content: center;
+        }
+        .btns_menu .btn{
+            font-size: 16px;
+            font-weight: 600;
+            color: #193a40;
+            width: 150px;
+            height: 40px;
+            border-radius: 6px;
+            margin: 4px;
+            background-color: #9ad2d9;
+            cursor: pointer;
+        }
+        .btns_menu .btn:hover{
+            background-color: white;
+            border: 1px solid #fff;
+        }
+        button{
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+            outline: none;
+
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="btns">
+        <div class="container">
+            <div class="btns_menu">
+                <button class="btn home">Home</button>
+                <button class="btn about">About</button>
+                <button class="btn skills">Skills</button>
+                <button class="btn works">Works</button>
+                <button class="btn contact">Contact</button>
+            </div>
+        </div>
+    </div>
+    <section id="home">
+        <div class="wrapper">
+            <h1>Home</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aspernatur dolorum adipisci, rerum voluptate eveniet quo quidem minima, qui ducimus aliquam facilis quis modi voluptatem eligendi laudantium dolores. Dignissimos, magni.</h3>
+        </div>
+    </section>
+    <section id="about">
+        <div class="wrapper">
+            <h1>About</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aspernatur dolorum adipisci, rerum voluptate eveniet quo quidem minima, qui ducimus aliquam facilis quis modi voluptatem eligendi laudantium dolores. Dignissimos, magni.</h3>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="wrapper">
+            <h1>SKills</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aspernatur dolorum adipisci, rerum voluptate eveniet quo quidem minima, qui ducimus aliquam facilis quis modi voluptatem eligendi laudantium dolores. Dignissimos, magni.</h3>
+        </div>
+    </section>
+    <section id="works">
+        <div class="wrapper">
+            <h1>Works</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aspernatur dolorum adipisci, rerum voluptate eveniet quo quidem minima, qui ducimus aliquam facilis quis modi voluptatem eligendi laudantium dolores. Dignissimos, magni.</h3>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="wrapper">
+            <h1>Contact</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aspernatur dolorum adipisci, rerum voluptate eveniet quo quidem minima, qui ducimus aliquam facilis quis modi voluptatem eligendi laudantium dolores. Dignissimos, magni.</h3>
+        </div>
+    </section>
+
+    <script>
+        const btnHome = document.querySelector('.home');
+        const sectionHome = document.querySelector('#home');
+        btnHome.addEventListener('click', function() {
+            sectionHome.scrollIntoView({behavior:'smooth', block:'center'});
+        });
+    </script>
+
+    <script>
+        const btnAbout = document.querySelector('.about');
+        const sectionAbout = document.querySelector('#about');
+        btnAbout.addEventListener('click', function() {
+            sectionAbout.scrollIntoView({behavior:'smooth', block:'center'});
+        });
+    </script>
+
+    <script>
+        const btnSkills = document.querySelector('.skills');
+        const sectionSkills = document.querySelector('#skills');
+        btnSkills.addEventListener('click', function() {
+            sectionSkills.scrollIntoView({behavior:'smooth', block:'center'});
+        });
+    </script>
+
+    <script>
+        const btnWorks = document.querySelector('.works');
+        const sectionWorks = document.querySelector('#works');
+        btnWorks.addEventListener('click', function() {
+            sectionWorks.scrollIntoView({behavior:'smooth', block:'center'});
+        });
+    </script>
+
+    <script>
+        const btnContact = document.querySelector('.contact');
+        const sectionContact = document.querySelector('#contact');
+        btnContact.addEventListener('click', function() {
+            sectionContact.scrollIntoView({behavior:'smooth', block:'center'});
+        });
+    </script>
+</body>
+</html>
